@@ -1,0 +1,322 @@
+{
+  "version": "ikore-1.0",
+  "title": "Being a Market Facilitator",
+  "roles": [
+    {
+      "id": "communicator",
+      "title": "Communicator",
+      "summary": "Strong communication across audiences; listening; succinct reports.",
+      "capacities": [
+        {
+          "id": "communicator.messaging",
+          "title": "Messaging",
+          "shortTitle": "Messaging",
+          "definition": "Effective communication of information to various audiences using a variety of media, ensuring the information is tailored to the audience.",
+          "levels": {
+            "1": "When someone gives me clear talking points or a script, I can share those messages the way I was shown.",
+            "2": "I can choose the right information for a specific audience and deliver it in a way that fits them.",
+            "3": "I confidently shape and deliver messages myself across different audiences, channels, and tools."
+          }
+        },
+        {
+          "id": "communicator.active_listening",
+          "title": "Active listening",
+          "shortTitle": "Listening",
+          "definition": "Engaging with and focusing on a speaker to deeply understand what they convey; perceptive to body language and subtle cues to preempt issues and flesh out useful information.",
+          "levels": {
+            "1": "I listen carefully and ask follow-up questions when something is unclear.",
+            "2": "I show I am listening (including through body language) and keep asking questions until I really understand what the person means.",
+            "3": "I ask thoughtful questions, reflect what I heard, and leave people feeling understood and respected."
+          }
+        },
+        {
+          "id": "communicator.reporting",
+          "title": "Reporting",
+          "shortTitle": "Reporting",
+          "definition": "Synthesizing information and observations so others understand; presenting in appropriate formats for internal and external stakeholders.",
+          "levels": {
+            "1": "When asked, I can write up what I observed in a clear, factual way.",
+            "2": "I produce shorter reports that combine what I saw with simple analysis, using normal reporting tools or software.",
+            "3": "On my own initiative I share concise updates—what I saw, what it may mean for the work—and I can present that well to different audiences."
+          }
+        }
+      ]
+    },
+    {
+      "id": "relationship_builder",
+      "title": "Relationship builder",
+      "summary": "Trust, connections, and mediation.",
+      "capacities": [
+        {
+          "id": "relationship_builder.fostering_trust",
+          "title": "Fostering trust",
+          "shortTitle": "Trust",
+          "definition": "Building and maintaining trust through integrity, competence, openness, reliability, and interest in others’ well-being.",
+          "levels": {
+            "1": "Trust tends to build slowly with market actors, communities, and teammates.",
+            "2": "I gain trust faster with some groups than others, and I pay attention to how much trust exists in each relationship.",
+            "3": "I build trusting relationships quickly where needed and I actively check and maintain trust with different people."
+          }
+        },
+        {
+          "id": "relationship_builder.making_connections",
+          "title": "Making connections",
+          "shortTitle": "Connections",
+          "definition": "Identifying synergies between third parties and linking them to forge productive new relationships.",
+          "levels": {
+            "1": "I know a limited circle of people in the sector and can only make a few useful introductions.",
+            "2": "I have useful contacts, spot good matches, and introduce people so they can start working together productively.",
+            "3": "I keep strong networks (including government and business), create new links that fit programme priorities, align interests, and follow up so introductions turn into real collaboration."
+          }
+        },
+        {
+          "id": "relationship_builder.mediation",
+          "title": "Mediation",
+          "shortTitle": "Mediation",
+          "definition": "Assisting two or more parties to resolve conflict, overcome challenges or reach agreement.",
+          "levels": {
+            "1": "In simple disagreements with few people involved, I can help find a compromise; I am not always fully neutral.",
+            "2": "I stay neutral, keep the conversation moving, and help people reach agreement or calm a conflict.",
+            "3": "I stay neutral, help people find workable and creative solutions, and keep ownership with them—not with me."
+          }
+        }
+      ]
+    },
+    {
+      "id": "businessperson",
+      "title": "Businessperson",
+      "summary": "Marketing, finances and records, human resources—for credibility and advice.",
+      "capacities": [
+        {
+          "id": "businessperson.marketing",
+          "title": "Marketing",
+          "shortTitle": "Marketing",
+          "definition": "Understanding consumer needs, offering products and services that satisfy these needs, and ensuring long-term satisfaction.",
+          "levels": {
+            "1": "I can run simple surveys to learn about the market and I understand why good customer relationships matter.",
+            "2": "I can run surveys, do basic analysis, help with simple promotions or adverts, and I grasp how value chains connect to programme goals.",
+            "3": "I understand the marketing mix (the five Ps); I can gather market insights and advise on marketing strategy and customer care."
+          }
+        },
+        {
+          "id": "businessperson.finances_record_keeping",
+          "title": "Finances and record-keeping",
+          "shortTitle": "Finance",
+          "definition": "Keeping track of financial positions, transactions, inventories, and other business information for accountability and decision-making.",
+          "levels": {
+            "1": "With someone guiding me, I can keep simple business records and I see why accurate records matter.",
+            "2": "I can keep solid records and understand basics like cash flow and profit.",
+            "3": "I can handle more complex business settings and records, give sound basic finance advice, spot financial risks, and weigh value to the market before money decisions."
+          }
+        },
+        {
+          "id": "businessperson.human_resources",
+          "title": "Human resources",
+          "shortTitle": "HR",
+          "definition": "Selecting, training and managing company personnel.",
+          "levels": {
+            "1": "I can help deliver training for junior staff or community members and I have a sense of what makes a good employee.",
+            "2": "I can run small training sessions on my own for junior staff and advise on choosing junior staff.",
+            "3": "I can run trainings, advise on hiring and recruitment, and understand how incentives affect performance."
+          }
+        }
+      ]
+    },
+    {
+      "id": "coach",
+      "title": "Coach",
+      "summary": "Needs assessment, feedback, and action—with ownership by market actors.",
+      "capacities": [
+        {
+          "id": "coach.needs_assessment",
+          "title": "Needs assessment",
+          "shortTitle": "Needs",
+          "definition": "Dialogue with a coachee so both become aware of and understand areas for improvement.",
+          "levels": {
+            "1": "I sometimes meet market actors and stakeholders to hear their problems and needs.",
+            "2": "I meet regularly with market actors and stakeholders to talk through issues and pin down specific needs.",
+            "3": "I engage often to uncover real needs and help people want to act on those needs."
+          }
+        },
+        {
+          "id": "coach.feedback",
+          "title": "Feedback",
+          "shortTitle": "Feedback",
+          "definition": "Giving and receiving constructive criticism or encouragement based on observations to enhance future effectiveness.",
+          "levels": {
+            "1": "I give praise easily but I rarely give corrective feedback; I tend to accept feedback from others without pushing back much.",
+            "2": "I give balanced positive and corrective feedback to some people I support, and I change how I work when I receive feedback.",
+            "3": "I give clear, useful feedback that helps people improve; I actively ask for feedback and use it to improve interventions."
+          }
+        },
+        {
+          "id": "coach.stimulate_action",
+          "title": "Stimulate action",
+          "shortTitle": "Action",
+          "definition": "Helping the coachee reach conclusions, formulate plans, and execute them.",
+          "levels": {
+            "1": "I help people think about next steps, but plans often stay vague.",
+            "2": "I help people build concrete action plans and I check in on how things are going.",
+            "3": "I help people commit to improvement, co-create action plans, support them, and keep ownership on their side."
+          }
+        }
+      ]
+    },
+    {
+      "id": "innovator",
+      "title": "Innovator",
+      "summary": "Ideas, learning, and collaboration for market improvement.",
+      "capacities": [
+        {
+          "id": "innovator.trying_ideas",
+          "title": "Trying ideas",
+          "shortTitle": "Ideas",
+          "definition": "Originating ideas for self and others and testing those ideas.",
+          "levels": {
+            "1": "I sometimes suggest new ideas for myself or partners but struggle to carry them through; I usually need a manager to approve.",
+            "2": "I am curious, try new ideas at times, bounce back when something fails, and think outside the usual box.",
+            "3": "I regularly test new ideas, treat setbacks as learning, and look beyond standard ways of working for solutions."
+          }
+        },
+        {
+          "id": "innovator.learning",
+          "title": "Learning",
+          "shortTitle": "Learning",
+          "definition": "Reflecting on actions and progress to inform future action.",
+          "levels": {
+            "1": "I learn from my own tasks but I change slowly unless someone directs me to.",
+            "2": "I actively learn from my work and from others, and I adjust what I do based on what I learned.",
+            "3": "I reflect, capture lessons, seek new learning, compare results to what I expected, and apply sector lessons to decisions."
+          }
+        },
+        {
+          "id": "innovator.collaboration",
+          "title": "Collaboration",
+          "shortTitle": "Collaboration",
+          "definition": "Sharing information and working with colleagues to create innovations in the team’s work.",
+          "levels": {
+            "1": "I share and collaborate when I am asked, and I contribute to the team.",
+            "2": "I share what works, work through issues with internal and external colleagues, and am seen as helpful in teams.",
+            "3": "I share successes and failures openly, spot what blocks teamwork and address it, and step up to lead when needed."
+          }
+        }
+      ]
+    },
+    {
+      "id": "political_economist",
+      "title": "Political economist",
+      "summary": "Institutional, political, and economic analysis for strategy.",
+      "capacities": [
+        {
+          "id": "political_economist.institutional_analysis",
+          "title": "Institutional analysis",
+          "shortTitle": "Institutional",
+          "definition": "How institutions affect markets and poor people; options for change.",
+          "levels": {
+            "1": "With guidance, I can gather facts about institutions and how they affect markets.",
+            "2": "I can map a market system in basic terms—who holds influence, how institutions fit together, and what that means for poor people.",
+            "3": "I critically map institutions (for example with a diagram), assign roles fairly, and suggest practical changes that help poor people."
+          }
+        },
+        {
+          "id": "political_economist.political_analysis",
+          "title": "Political analysis",
+          "shortTitle": "Political",
+          "definition": "How political power shapes public policy, service delivery, and markets.",
+          "levels": {
+            "1": "I notice politics in markets and, with guidance, I can collect relevant information.",
+            "2": "I can describe current political situations objectively and explain how they affect markets.",
+            "3": "I analyse how power and politics shape markets and poverty, map relationships, and recommend changes that help poor people."
+          }
+        },
+        {
+          "id": "political_economist.economic_analysis",
+          "title": "Economic analysis",
+          "shortTitle": "Economic",
+          "definition": "Economic cost and benefit of public policy around market development.",
+          "levels": {
+            "1": "With guidance, I can gather economic information and see how markets connect to poor people.",
+            "2": "I can organise simple evidence in spreadsheets with light analysis to explain a market situation.",
+            "3": "I build richer evidence in spreadsheets, compare options with cost–benefit thinking, and argue for changes that benefit poor people in markets."
+          }
+        }
+      ]
+    }
+  ],
+  "foundation": {
+    "attitudes": [
+      {
+        "id": "att_observant",
+        "title": "Observant",
+        "description": "Keep up with the pace of business; notice changes and update plans accordingly."
+      },
+      {
+        "id": "att_determined",
+        "title": "Determined",
+        "description": "Maintain focus and motivation when changing behaviours and markets is difficult."
+      },
+      {
+        "id": "att_curious",
+        "title": "Curious",
+        "description": "Constantly seek new information, challenges, and solutions."
+      },
+      {
+        "id": "att_analytical",
+        "title": "Analytical",
+        "description": "Make rigorous assessments and informed decisions."
+      },
+      {
+        "id": "att_outgoing",
+        "title": "Outgoing",
+        "description": "Proactively engage with a variety of market actors and stakeholders."
+      },
+      {
+        "id": "att_humble",
+        "title": "Humble",
+        "description": "Adapt quickly and build relationships."
+      },
+      {
+        "id": "att_regard_for_others",
+        "title": "Regard for others",
+        "description": "Obtain fulfilment from the facilitation approach."
+      }
+    ],
+    "capacities": [
+      {
+        "id": "cap_organization",
+        "title": "Organization",
+        "description": "Work successfully with multiple stakeholders and many tasks at the same time."
+      },
+      {
+        "id": "cap_self_awareness",
+        "title": "Self-awareness",
+        "description": "Continue forward progress towards goals."
+      },
+      {
+        "id": "cap_teamwork",
+        "title": "Teamwork",
+        "description": "Realise goals that cannot be achieved by a single person."
+      },
+      {
+        "id": "cap_data_analysis",
+        "title": "Data analysis",
+        "description": "Pull insight from quantitative and qualitative data collected."
+      },
+      {
+        "id": "cap_strategic_thinking",
+        "title": "Strategic thinking",
+        "description": "Plan and act most effectively."
+      },
+      {
+        "id": "cap_influencing",
+        "title": "Influencing",
+        "description": "Ensure others contribute to your goals."
+      },
+      {
+        "id": "cap_decision_making",
+        "title": "Decision-making",
+        "description": "Take reasonable actions based on well thought-out assessments."
+      }
+    ]
+  }
+}
