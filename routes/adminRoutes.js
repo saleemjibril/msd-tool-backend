@@ -7,6 +7,7 @@ const router = Router();
 
 router.post("/login", rateLimit({ windowMs: 60_000, max: 20, keySuffix: "adminlogin" }), admin.login);
 router.get("/surveys", adminAuth, admin.listSurveys);
+router.get("/aggregates", adminAuth, admin.getAggregates);
 router.get("/surveys/:id", adminAuth, admin.getSurvey);
 
 export default router;

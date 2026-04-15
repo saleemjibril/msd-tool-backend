@@ -4,7 +4,7 @@ import mongoose from "mongoose";
 import { AdminUser } from "../models/AdminUser.js";
 import { SurveySubmission } from "../models/SurveySubmission.js";
 import { loadFramework } from "../utils/loadFramework.js";
-import { computeSurveyResult } from "../utils/computeSurvey.js";
+import { computeAggregatedResult, computeSurveyResult } from "../utils/computeSurvey.js";
 import { normalizePhone } from "../utils/phoneNormalize.js";
 
 export async function login(req, res) {
@@ -81,6 +81,21 @@ export async function listSurveys(req, res) {
   } catch (e) {
     console.error(e);
     res.status(500).json({ error: "List failed" });
+  }
+}
+
+export async function getAggregates(req, res) {
+  try {
+    const framework = loadFramework();
+    const surveys = await SurveySubmission.find({ status: "completed" }).select("answers").lean();
+    const result = computeAggregatedResult(framework, surveys);
+    res.json({
+      submissionCount: surveys.length,
+      result,
+    });
+  } catch (e) {
+    console.error(e);
+    res.status(500).json({ error: "Aggregate failed" });
   }
 }
 

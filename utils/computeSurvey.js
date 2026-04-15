@@ -112,6 +112,101 @@ export function computeSurveyResult(framework, answers, foundation) {
   };
 }
 
+const round1 = (x) => Math.round(Number(x) * 10) / 10;
+
+/**
+ * Mean of numeric samples, or null if empty.
+ * @param {number[]} values
+ */
+function meanOrNull(values) {
+  if (!values.length) return null;
+  return values.reduce((a, b) => a + b, 0) / values.length;
+}
+
+/**
+ * Cohort result: averages across many completed submissions (same shape as computeSurveyResult).
+ * @param {object} framework
+ * @param {ReadonlyArray<{ answers?: Record<string, number> }>} submissions
+ */
+export function computeAggregatedResult(framework, submissions) {
+  const list = submissions || [];
+
+  const levelForCapacity = (capacityId) => {
+    const vals = [];
+    for (const s of list) {
+      const v = s.answers?.[capacityId];
+      if (v === 1 || v === 2 || v === 3) vals.push(v);
+    }
+    const m = meanOrNull(vals);
+    return m == null ? null : round1(m);
+  };
+
+  const roleSummaries = [];
+
+  for (const role of framework.roles) {
+    const capPoints = [];
+    let sum = 0;
+    for (const cap of role.capacities) {
+      const level = levelForCapacity(cap.id);
+      if (level == null) continue;
+      sum += level;
+      capPoints.push({
+        id: cap.id,
+        title: cap.title,
+        level,
+        axisLabel: cap.shortTitle || cap.title,
+      });
+    }
+    const count = capPoints.length;
+    const average = count > 0 ? round1(sum / count) : 0;
+    roleSummaries.push({
+      roleId: role.id,
+      roleTitle: role.title,
+      average,
+      capacities: capPoints,
+    });
+  }
+
+  const overallRadar = roleSummaries.map((r) => ({
+    subject: r.roleTitle,
+    fullMark: 3,
+    average: r.average,
+  }));
+
+  const weaknesses = [];
+  for (const role of framework.roles) {
+    for (const cap of role.capacities) {
+      const level = levelForCapacity(cap.id);
+      if (level == null || level >= 3) continue;
+      const next = String(Math.min(3, Math.ceil(level)));
+      weaknesses.push({
+        capacityId: cap.id,
+        title: cap.title,
+        roleId: role.id,
+        roleTitle: role.title,
+        level,
+        nextLevel: 3,
+        improvementHint: cap.levels["3"] || cap.levels[next] || "",
+      });
+    }
+  }
+
+  const overallAverage =
+    roleSummaries.length > 0
+      ? round1(roleSummaries.reduce((s, r) => s + r.average, 0) / roleSummaries.length)
+      : 0;
+
+  return {
+    frameworkVersion: framework.version,
+    roleSummaries,
+    overallRadar,
+    overallAverage,
+    gapCount: weaknesses.length,
+    weaknesses,
+    foundation: null,
+  };
+}
+
 export function validateComplete(framework, answers, foundation) {
   const missingCaps = [];
   for (const id of getAllCapacityIds(framework)) {
